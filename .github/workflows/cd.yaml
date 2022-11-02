@@ -14,7 +14,7 @@ jobs:
         uses: docker/build-push-action@v1.1.0
         with:
           username: danielmedeirosn
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.docker-password }}
           repository: danielmedeirosn/argocd-fullcycle
           tags: ${{ github.sha }}, latest     
 
